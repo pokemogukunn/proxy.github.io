@@ -1,0 +1,12 @@
+<html><head><script>console.log("POST");</script>
+            
+            </head><body>
+                <h1>Welcome to proxy.</h1>
+        
+                <form action="./" method="post">
+                    <input type="text" name="url" placeholder="URL">
+                    <input type="submit" value="Go">
+                </form>
+            
+            
+            </body></html>
