@@ -11,5 +11,16 @@
                     </script>
                 <input type="submit" value="Try" id="enter">
             </form>
+        <script>function backend(){
+        if (document.getElementById("gennumber"+"form").value == 8517500){document.cookie = "yuki=True; max-age=31536000;path=/";location.href="/";}
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/answer?q='+document.getElementById("gennumber"+"form").value, true);
         
+        xhr.onload = function () {
+            document.getElementById("gennumber"+"form").value = xhr.responseText;
+        };
+        
+        xhr.send();
+        event.preventDefault();}
+    </script>
         <script>console.log("END");</script></body></html>
